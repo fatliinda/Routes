@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\ProductsController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,13 +13,35 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+
+Route::get('/', [ProductsController::class, 'index']);
+
+/*Route::get('/', function () {
+    return view('home');
     
-});
-Route::get('/users',function(){
+});*/
+
+
+
+/*Route::get('/users',function(){
 
         return "<h1>Hi welcome to users!</h1>";
 
 
 });
+
+Route::get('/users',function(){
+
+
+    return ['php','laravel','html'];
+});
+Route::get('/users',function(){
+
+    return response()->json([
+        'name'=> 'Fatlinda',
+        'surname'=> 'Brahaj'
+    ]);
+
+   
+    
+});*/
