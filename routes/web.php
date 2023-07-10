@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\ProductsController;
+use App\Http\Controllers\PagesController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,7 +14,20 @@ use App\Http\Controllers\ProductsController;
 */
 
 
-Route::get('/', [ProductsController::class, 'index']);
+Route::get('/', [PagesController::class, 'index']);
+Route::get('/about',[PagesController::class,'about']);
+
+
+
+//Route::get('/products/{id}',[ProductsController::class,'show'])->where('id','[0-9]+');
+
+/*Route::get('/products/{name}/{id}',[ProductsController::class,'show'])->where([
+    'name' => '[a-zA-Z]+',
+    'id' =>'[0-9]+'
+]
+);*/
+
+
 
 /*Route::get('/', function () {
     return view('home');
