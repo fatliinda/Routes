@@ -8,7 +8,7 @@
     </title>
     <link
         rel="stylesheet"
-        href="{{'css/app.css'}}"
+        href="{{ asset('cssfiles/style.css') }}"
     />
     <link
         href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&display=swap"
@@ -40,7 +40,7 @@
     <!-- Every div is a grid item -->
     <div class="container-grid-4">
         <div>
-            <img src="{{URL('storage/icon-box.jpg')}}" alt="">
+            <img src="{{URL('images/icon-box.jpg')}}" alt="">
             <h2>
                 Web Design
             </h2>
@@ -50,7 +50,7 @@
         </div>
 
         <div>
-            <img src="{{URL('storage/icon-box.jpg')}}" alt="">
+            <img src="{{URL('images/icon-box.jpg')}}" alt="">
             <h2>
                 Web Development
             </h2>
@@ -60,7 +60,7 @@
         </div>
 
         <div>
-            <img src="{{URL('storage/icon-box.jpg')}}" alt="">
+            <img src="{{URL('images/icon-box.jpg')}}" alt="">
             <h2>
                 Product Design
             </h2>
@@ -70,7 +70,7 @@
         </div>
 
         <div>
-            <img src="{{URL('storage/icon-box.jpg')}}" alt="">
+            <img src="{{URL('images/icon-box.jpg')}}" alt="">
             <h2>
                 Creative Thinker
             </h2>
@@ -89,7 +89,7 @@
     <!-- Meet the team section -->
     <div class="container-grid-2">
         <div>
-            <img class="img-team" src="{{URL('storage/team-section-home.jpg')}}" alt="">
+            <img class="img-team" src="{{URL('images/team-section-home.jpg')}}" alt="">
         </div>
         <div>
             <h2>
@@ -129,7 +129,7 @@
         </div>
 
         <div class="middle">
-            <img src="{{URL('storage/icon-box.jpg')}}" alt="">
+            <img src="{{URL('images/icon-box.jpg')}}" alt="">
         </div>
 
         <div>
