@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PagesController;
+use App\Http\Controllers\PostsController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -16,7 +18,8 @@ use App\Http\Controllers\PagesController;
 
 Route::get('/', [PagesController::class, 'index']);
 Route::get('/about',[PagesController::class,'about']);
-
+//posts
+Route::get('/posts',[PostsController::class,'index']);
 
 
 //Route::get('/products/{id}',[ProductsController::class,'show'])->where('id','[0-9]+');
