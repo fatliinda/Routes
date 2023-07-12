@@ -59,25 +59,7 @@
             </p>
         </div>
 
-        <div>
-            <img src="{{URL('images/icon-box.jpg')}}" alt="">
-            <h2>
-                Product Design
-            </h2>
-            <p>
-                Lorem ipsum dolor sit amet consectetur!
-            </p>
-        </div>
-
-        <div>
-            <img src="{{URL('images/icon-box.jpg')}}" alt="">
-            <h2>
-                Creative Thinker
-            </h2>
-            <p>
-                Lorem ipsum dolor sit amet consectetur!
-            </p>
-        </div>
+        
     </div>
 
     <div class="header-section">
